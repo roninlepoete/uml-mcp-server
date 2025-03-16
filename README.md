@@ -96,18 +96,18 @@ The Cursor supports MCP (Model Context Protocol) servers, allowing you to direct
 
 ```json
 {
-"mcpServers": {
-"UML-MCP-Server": {
-"command": "uv",
-"args": [
-"--directory",
-"/Users/yourpath/UML-MCP-Server",
-"run",
-"uml_mcp_server.py"
-],
-"output_dir": "/Users/yourpath/uml-output"
-}
-}
+    "mcpServers": {
+        "UML-MCP-Server": {
+            "command": "uv",
+            "args": [
+                "--directory",
+                "/Users/edy/vs-code/UML-MCP-Server",
+                "run",
+                "uml_mcp_server.py"
+            ],
+            "output_dir": "/Users/edy/vs-code/bjwa-task-project/uml-output"
+        }
+    }
 }
 ```
 
