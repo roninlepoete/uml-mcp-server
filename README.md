@@ -2,6 +2,8 @@
 
 [English](README.md) | [中文](README_zh.md)
 
+[![smithery badge](https://smithery.ai/badge/@Swayingleaves/uml-mcp-server)](https://smithery.ai/server/@Swayingleaves/uml-mcp-server)
+
 UML-MCP Server is a UML diagram generation tool based on MCP (Model Context Protocol), which can help users generate various types of UML diagrams through natural language description or directly writing PlantUML code.
 
 ## Functional Features
@@ -17,6 +19,15 @@ UML-MCP Server is a UML diagram generation tool based on MCP (Model Context Prot
 
 ## Installation
 
+### Installing via Smithery
+
+To install UML Diagram Generation Tool for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Swayingleaves/uml-mcp-server):
+
+```bash
+npx -y @smithery/cli install @Swayingleaves/uml-mcp-server --client claude
+```
+
+### Manual Installation
 1. Clone repository:
 
 ```bash
