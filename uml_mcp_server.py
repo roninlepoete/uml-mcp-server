@@ -7,7 +7,7 @@ import base64
 import json
 import os
 import sys
-import zlib
+import zlib  # Utilisation du module zlib standard au lieu de zlib3
 import requests
 import logging
 import datetime

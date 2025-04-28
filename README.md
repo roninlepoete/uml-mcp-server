@@ -8,14 +8,14 @@ UML-MCP Server is a UML diagram generation tool based on MCP (Model Context Prot
 
 ## Functional Features
 
-- Supports multiple UML diagram types: class diagram, sequence diagram, activity diagram, use case diagram, state diagram, component diagram, deployment diagram, object diagram
+- Supports  multiple UML diagram types: class diagram, sequence diagram, activity diagram, use case diagram, state diagram, component diagram, deployment diagram, object diagram
 - UML diagrams can be generated through natural language description
 - You can directly use PlantUML code to generate UML diagrams
 - Return PlantUML code and accessible URL links for easy sharing and viewing
 - Simultaneously save the generated UML diagram locally and provide the local file path
 - Support custom save path and specify the output directory for UML images
 - As an MCP server, it can integrate with clients that support MCP, such as Claude
-- A comprehensive logging system that records server operating status and operation logs
+- A comprehensive logging system that records server operating status and operation logs.
 
 ## Installation
 
