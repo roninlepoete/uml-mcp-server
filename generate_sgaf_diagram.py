@@ -9,6 +9,7 @@ import zlib
 import base64
 import json
 import re
+import datetime
 
 def extract_mermaid_sequence_diagram(markdown_file):
     """
@@ -71,8 +72,8 @@ def generate_uml_image(uml_code, output_dir="output"):
     # Encoder le code
     encoded = plantuml_encode(uml_code)
     
-    # Construire l'URL
-    url = f"http://www.plantuml.com/plantuml/png/{encoded}"
+    # Construire l'URL (avec ~1 pour corriger l'encodage HUFFMAN)
+    url = f"http://www.plantuml.com/plantuml/png/~1{encoded}"
     
     # Récupérer l'image
     response = requests.get(url)
@@ -81,8 +82,10 @@ def generate_uml_image(uml_code, output_dir="output"):
         # Créer le répertoire de sortie si nécessaire
         os.makedirs(output_dir, exist_ok=True)
         
-        # Créer un nom de fichier
-        file_path = os.path.join(output_dir, "sgaf_authentication_sequence.png")
+        # Créer un nom de fichier avec format DateDuJour_hh_mn
+        current_time = datetime.datetime.now()
+        filename = current_time.strftime("%Y%m%d_%H%M") + "_sgaf_auth_sequence.png"
+        file_path = os.path.join(output_dir, filename)
         
         # Sauvegarder l'image localement
         with open(file_path, 'wb') as f:
